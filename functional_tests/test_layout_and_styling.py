@@ -9,7 +9,7 @@ class LayoutAndStylingTest(FunctionalTest):
 
         # She starts a new list and sees the input is nicely
         # centered there too
-        inputbox = self.browser.find_element_by_id('id_new_item')
+        inputbox = self.get_item_input_box()
         # inputbox.send_keys('testing')
         # inputbox.send_keys(Keys.ENTER)
         self.assertAlmostEqual(
